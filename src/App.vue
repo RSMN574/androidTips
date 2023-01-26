@@ -2,17 +2,33 @@
 
   <router-view/>
 </template>
+<script>
+export default {
+  data(){
+    return{
 
-<style>
-*{
-  background:#F9F6FD
+    }
+  },
+  mounted(){
+  
+
+  },beforeCreate(){
+
+  }
 }
+
+</script>
+<style>
+ 
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background:#F9F6FD;
+  height:100%;
 }
 
 nav {

@@ -1,5 +1,14 @@
 <template>
     <mainNav class="fixed"></mainNav>
+    <div class="container mx-auto py-6">
+<div class="breadcrumbs text-sm ">
+	<ul>
+		<li>
+			<router-link to="/">首頁</router-link></li>
+		<li>影音娛樂</li>
+	</ul>
+</div>
+</div>
 </template>
    
    <script>
@@ -10,7 +19,17 @@
      name: 'viewC',
      components: {
        mainNav
-     }
+     },data(){
+      return{
+        post:{}
+      }
+     },mounted(){
+window.addEventListener('load',async ()=>{
+ await this.$store.dispatch('FetchPosts',"view3")
+this.post=  this.$store.state.post.view3
+		console.log(this.post)
+		})
+		}
    }
    </script>
    

@@ -30,6 +30,10 @@ const routes = [
     path: '/viewE',
     name: 'viewE',
     component: viewE
+  },{
+    path: '/post/:id',
+    name: 'Post',
+    component: () => import('../views/post_id.vue'),
   },
   
 ]

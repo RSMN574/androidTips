@@ -10,7 +10,7 @@
   <div><router-link to="/viewD">刷機專區</router-link></div>
   <div><router-link to="/viewE">其他</router-link></div>
 </div>      </div>
-  <div class="basis-2/5 bg-transparent lg:basis-1/5 md:hidden 596:hidden sm:hidden">搜尋</div>
+  <div class="basis-2/5 bg-transparent lg:basis-1/5 md:hidden 596:hidden sm:hidden"><input class="input h-8" placeholder="搜尋" /></div>
   <div class="hidden md:block sm:block md:basis-1/6 sm:basis-1/6">
     <svg @click="mobileNav=true" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512" height="512">
 <g>
