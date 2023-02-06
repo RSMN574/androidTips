@@ -9,7 +9,7 @@ module.exports = {
       '596':{'min': '596px','max': '766px'},
       'lg': {'min': '767px','max': '1020px'},
      'xl': {'min': '1021px','max': '1440px'},
-     '4k':{'min': '1441px','max': '2560px'},
+     '4k':'1441px',
     
     }
   },

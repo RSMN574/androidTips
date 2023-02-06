@@ -2,7 +2,7 @@
 <template>
     <mainNav class="fixed"></mainNav>
     <div class="container mx-auto py-6">
-<div class="breadcrumbs text-sm ">
+<div class="breadcrumbs text-sm mb-5">
 	<ul>
 		<li>
 			<router-link to="/">首頁</router-link></li>
@@ -29,6 +29,11 @@
         post:{}
       }
      },mounted(){
+      if(/r/gi.test(location.href)){
+	location.assign(location.href.substring(0, location.href.length - 2))
+			location.reload(true);
+
+		}
 window.addEventListener('load',async ()=>{
  await this.$store.dispatch('FetchPosts',"view1")
 this.post=  this.$store.state.post.view1
