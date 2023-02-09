@@ -3,7 +3,7 @@
  <div class="max-w-md  h-max mx-auto   shadow-md overflow-hidden border border-slate-300 bg-[#f5f8fc] rounded-xl  hover:scale-105 transition ease-in-out">
   <div class="">
 
-      <img class=" h-full  object-coveraspect-video w-full" v-if="post.mainImage" :src="CreateURL(post.mainImage)"  alt="">
+      <img class=" h-full  object-coveraspect-video w-full lazyload" v-if="post.mainImage" data-src="original.jpg" :src="CreateURL(post.mainImage)"  alt="">
     </div>
     <div class="p-4">
        <h1 class="block mt-1 text-lg leading-tight font-medium text-black" >{{ post.title }}</h1>

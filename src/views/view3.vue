@@ -27,8 +27,8 @@
         post:{}
       }
      },mounted(){
-      if(/r/gi.test(location.href)){
-	location.assign(location.href.substring(0, location.href.length - 2))
+      if(/reload/gi.test(location.href)){
+	location.assign(location.href.substring(0, location.href.length - 7))
 			location.reload(true);
 
 		}

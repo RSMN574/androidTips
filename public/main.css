@@ -1428,6 +1428,24 @@ html {
   width: 23px;
 }
 
+.alert {
+  --tw-bg-opacity: 1;
+  align-items: center;
+  background-color: rgb(var(--gray-300)/var(--tw-bg-opacity));
+  border-radius: .75rem;
+  display: flex;
+  flex-direction: row;
+  gap: .75rem;
+  padding: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.alert-warning {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--yellow-300)/var(--tw-bg-opacity));
+}
+
 .table {
   --tw-border-spacing-x: 0px;
   --tw-border-spacing-y: 0px;
@@ -1644,6 +1662,14 @@ html {
   position: relative;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
 .m-0 {
   margin: 0px;
 }
@@ -1656,6 +1682,11 @@ html {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .mt-1 {
@@ -1672,6 +1703,10 @@ html {
 
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .block {
@@ -1773,6 +1808,10 @@ html {
 
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-sm {
+  max-width: 24rem;
 }
 
 .basis-1\/5 {
@@ -1915,8 +1954,17 @@ html {
   padding-bottom: 1.5rem;
 }
 
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .pt-24 {
   padding-top: 6rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
 }
 
 .text-left {
@@ -1985,6 +2033,11 @@ html {
 .text-slate-700 {
   --tw-text-opacity: 1;
   color: rgb(var(--slate-700) / var(--tw-text-opacity));
+}
+
+.text-content2 {
+  --tw-text-opacity: 1;
+  color: rgb(var(--content2) / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2134,6 +2187,14 @@ html {
     flex-basis: 16.666667%;
   }
 
+  .sm\:basis-4\/6 {
+    flex-basis: 66.666667%;
+  }
+
+  .sm\:basis-2\/6 {
+    flex-basis: 33.333333%;
+  }
+
   .sm\:flex-col {
     flex-direction: column;
   }
@@ -2182,6 +2243,14 @@ html {
     flex-basis: 16.666667%;
   }
 
+  .md\:basis-4\/6 {
+    flex-basis: 66.666667%;
+  }
+
+  .md\:basis-2\/6 {
+    flex-basis: 33.333333%;
+  }
+
   .md\:flex-col {
     flex-direction: column;
   }
@@ -2207,6 +2276,10 @@ html {
 
   .lg\:w-10\/12 {
     width: 83.333333%;
+  }
+
+  .lg\:w-1\/5 {
+    width: 20%;
   }
 
   .lg\:max-w-2xl {
@@ -2249,6 +2322,10 @@ html {
     width: 12rem;
   }
 
+  .xl\:w-1\/5 {
+    width: 20%;
+  }
+
   .xl\:max-w-2xl {
     max-width: 42rem;
   }
@@ -2270,6 +2347,10 @@ html {
 
   .\34k\:w-10\/12 {
     width: 83.333333%;
+  }
+
+  .\34k\:w-2\/12 {
+    width: 16.666667%;
   }
 
   .\34k\:max-w-2xl {
